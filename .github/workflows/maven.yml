@@ -2,8 +2,7 @@ name: Run Java 22 JAR
 
 on:
   push:
-    branches:
-      - main
+    branches: ["main"]
 
 jobs:
   run-jar:
@@ -20,4 +19,4 @@ jobs:
         java-version: '22'
 
     - name: Run JAR file
-      run: java -jar path/to/your-jar-file.jar
+      run: java -jar BankingManagementSystemMongo.jar
